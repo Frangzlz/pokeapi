@@ -1,0 +1,122 @@
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgba(204, 255, 238, .3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-block: 10px;
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Contenedor padre */
+.contenedor-pokemon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  padding-block: 1em;
+  margin-inline: 1em;
+}
+
+.contenedor-pokemon > div {
+  background-color: rgba(255, 255, 255, 0.74);
+  border: 1px solid #242424a9;
+  border-radius: 1em;
+  padding-block: 1em;
+}
+
+/* Contenedor de la imagen */
+.pokemon-img {
+  display: flex;
+  justify-content: center;
+  padding-block: 1em;
+}
+
+/* Data */
+.pokemon-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-inline: 1em;
+  gap: .5em;
+}
+
+/* Contenedor del id y el nombre */
+.pokemon-id-nombre {
+  display: flex;
+  column-gap: .5em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-id-nombre span {
+  color: #242424;
+  background-color: #bbbbbb67;
+  padding: .25em .5em;
+  border-radius: 100vmax;
+}
+
+.nombre {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Tipos */
+.pokemon-tipos {
+  display: flex;
+  gap: 5px;
+  font-weight: bold;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tipo {
+  padding: .25em .7em;
+  border-radius: 100vmax;
+}
+
+.grass {
+  background-color: rgb(1, 161, 1);
+}
+
+.poison {
+  background-color: darkviolet;
+  color: white;
+}
+
+.bug {
+  background-color: rgb(146, 184, 59);
+}
+
+.fire {
+  background-color: darkred;
+  color: white;
+}
+
+.water {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.flying {
+  background-color: rgb(163, 252, 255);
+}
+
+.normal {
+  background-color: rgb(221, 221, 221);
+}
